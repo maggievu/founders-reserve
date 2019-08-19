@@ -1,0 +1,36 @@
+.section-products {
+	position: relative;
+	top: -30vh;
+	height: 100vh;
+
+	.bg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		
+		&.bg-left {
+			right: 66.667%;
+			opacity: 0.5;
+			background: #fff;
+		}
+
+		img {
+			width: 100%;
+			height: 100vh;
+			object-fit: cover;
+		}
+	}
+
+	.products-container {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		justify-content: flex-end;
+	}
+}

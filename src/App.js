@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import './App.scss'
+import { ParallaxProvider } from 'react-scroll-parallax'
+import Intro from './components/Intro'
+import Products from './components/Products'
+import About from './components/About'
+import Growers from './components/Growers'
+import Blog from './components/Blog'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<ParallaxProvider>
+			<div class="main-container">
+				<Intro />
+				<Products />
+				<About />
+				<Growers />
+				<Blog />
+			</div>
+		</ParallaxProvider>
+	)
 }
 
-export default App;
+export default App

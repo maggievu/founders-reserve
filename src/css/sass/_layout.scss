@@ -1,0 +1,27 @@
+.main-container {
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+.bg-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.5;
+  background: #fff;
+}
+
+.bg-overlay-left {
+	left: 0;
+	right: 66.667%;
+}
+
+.bg-overlay-left-2x {
+	left: 0;
+	right: 33.333%;
+}
+
+.bg-overlay-right {
+	left: 33.333%;
+	right: 0;
+}

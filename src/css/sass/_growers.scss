@@ -1,0 +1,15 @@
+.section-growers {
+	.img-parallax {
+
+		&.img-shovel {
+			left: calc((100% - 1366px) / 2);
+			width: auto;
+		}
+		
+		&.img-dirt {
+			right: 0;
+			width: auto;
+		}
+	}
+
+}
