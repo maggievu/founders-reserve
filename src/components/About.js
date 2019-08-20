@@ -1,5 +1,5 @@
 import React from 'react'
-import { ParallaxBanner, Parallax } from 'react-scroll-parallax'
+import { ParallaxBanner } from 'react-scroll-parallax'
 import bgMain from '../assets/img/we_are1.png'
 import bgShadow from '../assets/img/we_are2-1.png'
 

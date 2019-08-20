@@ -1,5 +1,4 @@
 import React from 'react'
-import { ParallaxBanner, Parallax } from 'react-scroll-parallax'
 import products1 from '../assets/img/products1.png'
 import products2 from '../assets/img/products2.png'
 import product1 from '../assets/img/product1.png'
@@ -9,14 +8,12 @@ import product3 from '../assets/img/product3.png'
 function Products() {
 	return (
 		<div className="section section-products">
-			{/* <Parallax y={[-80, 60]}> */}
-				<div className="bg bg-main">
-					<img src={products2} alt="images used in products section" />
-				</div>
-				<div className="bg bg-bottom">
-					<img src={products1} alt="images used in products section" />
-				</div>
-			{/* </Parallax> */}
+			<div className="bg bg-main">
+				<img src={products2} alt="images used in products section" />
+			</div>
+			<div className="bg bg-bottom">
+				<img src={products1} alt="images used in products section" />
+			</div>
 
 			<div className="bg-overlay bg-overlay-left"></div>
 

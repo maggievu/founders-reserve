@@ -9,7 +9,7 @@ function Header() {
   }
 
   const closeMenu = (event) => {
-    event.preventDefault()
+    // event.preventDefault()
     document.querySelector(".site-main-navigation").style.left = '100vw'
   }
 
@@ -25,22 +25,22 @@ function Header() {
           <a href="#home"><img className="img-site-logo" src={logo} alt="Founders Reserve Logo" /></a>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="#home" onClick={closeMenu}>Home</a>
             </li>
             <li>
-              <a href="#products">Products</a>
+              <a href="#products" onClick={closeMenu}>Products</a>
             </li>
             <li>
-              <a href="#growers">Growers</a>
+              <a href="#growers" onClick={closeMenu}>Growers</a>
             </li>
             <li>
-              <a href="#blog">Blog</a>
+              <a href="#blog" onClick={closeMenu}>Blog</a>
             </li>
             <li>
-              <a href="#about">About</a>
+              <a href="#about" onClick={closeMenu}>About</a>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={closeMenu}>Contact</a>
             </li>
           </ul>
           <div className="bg-overlay bg-overlay-left-half"></div>
