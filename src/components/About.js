@@ -6,7 +6,7 @@ import bgShadow from '../assets/img/we_are2-1.png'
 function About() {
 	return (
 		<ParallaxBanner
-			className="section-about"
+			className="section section-about"
 			layers={[
 				{
 					children: (
@@ -25,11 +25,13 @@ function About() {
 			]}
 			style={{
 				height: '100vh',
-				top: '-30vh',
 			}}
 		>
 			<div className="bg-overlay bg-overlay-right"></div>
-			<h2 className="section-heading">Who we are</h2>
+			<h2 className="section-heading" id="about">Who we are</h2>
+			<div className="content content-right">
+				<p>Non sed arcu ipsum mauris sapien skateboard congue nam pharetra nibh quam tellus risus San Francisco sagittis urna. Leo massa adipiscing porttitor odio artisan cursus quam a mauris sed undefined odio wire-rimmed glasses adipiscing et sit pellentesque. Elementum ipsum malesuada skateboard porttitor pharetra eros cursus sagittis eu ornare specs quisque vulputate mauris auctor cursus curabitur. Leo food truck magna arcu massa ligula mattis tellus sagittis DIY fusce rutrum tempus sit arcu quisque. Sem undefined pharetra molestie leo eu duis leo proin you probably haven’t heard of them eget cursus.</p>
+			</div>
 		</ParallaxBanner>
 	)
 }

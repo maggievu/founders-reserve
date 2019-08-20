@@ -1,0 +1,35 @@
+// Viewport
+$screen-min-xxs: 375px;
+$screen-min-xs: 480px;
+$screen-min-sm: 768px;
+$screen-min-md: 992px;
+$screen-min-lg: 1280px;
+$screen-min-xxl: 1680px;
+
+// Margin & padding
+$sc-base-margin: 5px;
+$sc-margin-lv1: $sc-base-margin;
+$sc-margin-lv2: $sc-base-margin * 2;
+$sc-margin-lv3: $sc-base-margin * 3;
+$sc-margin-lv4: $sc-base-margin * 4;
+
+// Font size
+$font-size-base: 14px !default;
+$font-size-sm: ceil(($font-size-base * 0.85)) !default;
+$font-size-lg: ceil(($font-size-base * 1.25)) !default;
+$font-size-xxl: ceil(($font-size-base * 1.7)) !default;
+
+$font-size-h1: floor(($font-size-base * 2.6)) !default;
+$font-size-h2: floor(($font-size-base * 2.15)) !default;
+$font-size-h3: ceil(($font-size-base * 1.7)) !default;
+$font-size-h4: ceil(($font-size-base * 1.25)) !default;
+$font-size-h5: ceil(($font-size-base * 1.1)) !default;
+$font-size-h6: ceil(($font-size-base * 0.85)) !default;
+
+// Color
+$color-theme-primary: #FFF;
+$color-theme-secondary: #B19D80;
+$color-theme-background: #E8E3DA;
+$color-theme-black: #000;
+
+$color-link: #82623F;

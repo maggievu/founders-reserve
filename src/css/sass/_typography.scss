@@ -1,12 +1,62 @@
 body {
-	font-family: 'TrebuchetMS', "Times New Roman", "Times", arial, serif;
+	font-family: "TrebuchetMS", "Times New Roman", "Times", arial, serif;
+	color: $color-theme-primary;
+	font-size: $font-size-base;
+
+	@media screen and (min-width: $screen-min-md) {
+		line-height: 1.7;
+	}
+
+	p {
+		color: $color-theme-primary;
+		font-size: $font-size-sm;
+
+		@media screen and (min-width: $screen-min-md) {
+			font-size: $font-size-lg;
+		}
+
+		@media screen and (min-width: $screen-min-lg) {
+			font-size: $font-size-xxl;
+		}
+	}
+
+	a {
+		color: $color-theme-black;
+
+		&:hover,
+		&:focus,
+		&:active,
+		&:visited {
+			color: $color-link;
+		}
+	}
 }
 
 .section-heading {
 	position: absolute;
-	font-size: 9em;
 	font-weight: bold;
-	color: #5d5851;
-	opacity: .8;
-	margin: 10px 5%;
+	color: $color-theme-secondary;
+	// opacity: .8;
+	margin: $sc-margin-lv2 5%;
+	font-size: 2.5em;
+
+	@media screen and (min-width: $screen-min-xs) {
+		font-size: 5em;
+	}
+
+	@media screen and (min-width: $screen-min-md) {
+		font-size: 7.5em;
+	}
+
+	@media screen and (min-width: $screen-min-lg) {
+		font-size: 10.5em;
+	}
+}
+
+.btn {
+	border: 0;
+
+	&:focus {
+		box-shadow: none;
+	}
 }

@@ -7,7 +7,7 @@ import dirt from '../assets/img/growers2.png'
 function Growers() {
 	return (
 		<ParallaxBanner
-			className='section-growers'
+			className='section section-growers'
 			layers={[
 				{
 					children: (
@@ -32,11 +32,18 @@ function Growers() {
 			]}
 			style={{
 				height: '100vh',
-				top: '-30vh'
 			}}
 		>
 			<div className="bg-overlay bg-overlay-left"></div>
-			<h2 className="section-heading">Our growers</h2>
+			<h2 className="section-heading" id="growers">Our growers</h2>
+			<div className="content content-right">
+				<p>
+					Porttitor eros porttitor pellentesque metus nec donec bahn mi et elementum risus urna sagittis orci nibh. Ultricies malesuada Toms amet enim vitae pellentesque cursus sed vivamus sem congue tattoo pellentesque proin arcu amet quisque.
+				</p>
+				<hr />
+				<p className="author"><small>Mike Brown</small></p>
+				<p><small><em>British Columbia grower</em></small></p>
+			</div>
 		</ParallaxBanner>
 	)
 }

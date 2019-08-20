@@ -8,15 +8,15 @@ import product3 from '../assets/img/product3.png'
 
 function Products() {
 	return (
-		<div className="section-products">
-			<Parallax y={[-80, 60]}>
+		<div className="section section-products">
+			{/* <Parallax y={[-80, 60]}> */}
 				<div className="bg bg-main">
 					<img src={products2} alt="images used in products section" />
 				</div>
 				<div className="bg bg-bottom">
 					<img src={products1} alt="images used in products section" />
 				</div>
-			</Parallax>
+			{/* </Parallax> */}
 
 			<div className="bg-overlay bg-overlay-left"></div>
 
@@ -26,7 +26,7 @@ function Products() {
 				<img src={product3} alt="images used in products section" />
 			</div>
 
-			<h2 className="section-heading">Our products</h2>
+			<h2 className="section-heading" id="products">Our products</h2>
 		</div>
 	)
 }

@@ -4,11 +4,12 @@ import bgColor from '../assets/img/blog1.png'
 import sun from '../assets/img/blog2.png'
 import cloud from '../assets/img/blog3.png'
 import mountain from '../assets/img/blog4.png'
+// import arrow from '../assets/img/Group 15.svg'
 
 function Blog() {
 	return (
 		<ParallaxBanner
-			className='section-blog'
+			className='section section-blog'
 			layers={[
 				{
 					children: (
@@ -41,11 +42,25 @@ function Blog() {
 			]}
 			style={{
 				height: '100vh',
-				top: '-30vh'
 			}}
 		>
 			<div className="bg-overlay bg-overlay-left-2x"></div>
-			<h2 className="section-heading">Read The Blog</h2>
+			<h2 className="section-heading" id="blog">Read The Blog</h2>
+			<div className="content content-left-2x">
+				<article className="article">
+					<h3 className="article-heading">Porttitor eros Article 1</h3>
+					<p>Porttitor eros porttitor pellentesque metus nec donec bahn mi et elementum risus urna sagittis orci nibh. Ultricies malesuada Toms amet enim vitae pellentesque cursus sed vivamus sem congue tattoo pellentesque proin arcu amet quisque.</p>
+					<hr />
+					<button className="btn btn-continue">CONTINUE</button>
+				</article>
+				<article className="article">
+					<h3 className="article-heading">Porttitor eros Article 2</h3>
+					<p>Porttitor eros porttitor pellentesque metus nec donec bahn mi et elementum risus urna sagittis orci nibh. Ultricies malesuada Toms amet enim vitae pellentesque cursus sed vivamus sem congue tattoo pellentesque proin arcu amet quisque.</p>
+					<hr />
+					<button className="btn btn-continue">CONTINUE</button>
+				</article>
+			</div>
+			<button className="btn btn-read-all">READ ALL ARTICLES</button>
 		</ParallaxBanner>
 	)
 }

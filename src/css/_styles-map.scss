@@ -1,6 +1,9 @@
 @import '_normalize';
 @import '_reset-local';
 
+// Variables
+@import 'sass/variables';
+
 // Typography
 @import 'sass/typography';
 
@@ -11,6 +14,7 @@
 @import 'sass/media';
 
 // Header & Footer
+@import 'sass/header-footer';
 
 // Sections
 @import 'sass/intro';
@@ -19,8 +23,4 @@
 @import 'sass/growers';
 @import 'sass/blog';
 
-// Snap into place
-
 // Menu
-
-// Text
